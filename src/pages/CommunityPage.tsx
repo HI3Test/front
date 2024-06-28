@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CommunityPageContainer = styled.div`
-  padding: 20px;
+const CommunityContainer = styled.div`
+  padding: 2rem;
 `;
 
 const CommunityPage = () => {
   return (
-    <CommunityPageContainer>
-      <h2>Community Page</h2>
-      <p>Join our community and engage with others.</p>
-    </CommunityPageContainer>
+    <CommunityContainer>
+      <h1>커뮤니티</h1>
+      <p>커뮤.</p>
+    </CommunityContainer>
   );
 };
 

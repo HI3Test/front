@@ -1,19 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HomePageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+const HomeContainer = styled.div`
+  padding: 2rem;
 `;
 
 const HomePage = () => {
   return (
-    <HomePageContainer>
-      <h1>Welcome to Home Page</h1>
-    </HomePageContainer>
+    <HomeContainer>
+      <h1>하이 3조</h1>
+      <p>가보자</p>
+    </HomeContainer>
   );
 };
 

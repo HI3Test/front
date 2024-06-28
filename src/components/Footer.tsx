@@ -2,16 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
+  background: #333;
+  color: #fff;
   text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 `;
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <p>&copy; 2024 My Website. All rights reserved.</p>
+      &copy; {new Date().getFullYear()} Hi AI3조
     </FooterContainer>
   );
 };

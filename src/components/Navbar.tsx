@@ -1,42 +1,41 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const NavbarContainer = styled.nav`
-  background-color: #007bff;
-  padding: 10px 20px;
-  display: flex;
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  display:flex;
   justify-content: space-between;
   align-items: center;
 `;
 
-const NavTitle = styled.h1`
-  color: white;
-  margin: 0;
-`;
-
 const NavLinks = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size:1.2rem;
 `;
 
-const NavLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-`;
+const AuthLinks = styled.div`
+  display: flex;
+  gap: 1rem;
+  padding:1rem;
+  font-size:0.8rem;
+`
 
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <NavTitle>My Website</NavTitle>
       <NavLinks>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/chatbot">Chatbot</NavLink>
-        <NavLink to="/community">Community</NavLink>
+        <Link to="/">갈림길</Link>
+        <Link to="/chatbot">Chatbot</Link>
+        <Link to="/community">Community</Link>
       </NavLinks>
+      <AuthLinks>
+        <Link to="/login">로그인/가입</Link>
+      </AuthLinks>
     </NavbarContainer>
   );
 };
